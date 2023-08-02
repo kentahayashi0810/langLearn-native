@@ -5,15 +5,24 @@ const SearchBar = ({ onSubmit }) => {
   const [searchWord, setSearchWord] = useState("");
 
   return (
-    <form className="flex">
+    <form
+      className="flex h-14 justify-center min-w-min"
+      onSubmit={(event) => {
+        event.preventDefault();
+        onSubmit(searchWord);
+      }}
+    >
       <input
         type="text"
-        className="rounded-full mr-4"
+        className="rounded-full mr-4 border min-w-[400px] w-full px-7"
         value={searchWord}
         onChange={(event) => setSearchWord(event.target.value)}
       />
-      <button type="submit" className="rounded-full" onClick={onSubmit}>
-        <MdSearch />
+      <button
+        type="submit"
+        className="rounded-full border p-4 w-32 flex justify-center hover:bg-gray-100"
+      >
+        <MdSearch className="h-full w-full" />
       </button>
     </form>
   );
