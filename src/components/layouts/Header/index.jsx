@@ -24,7 +24,7 @@ export const Header = () => {
     <header className="w-full px-6 h-[70px] flex items-center justify-between bg-white drop-shadow-lg fixed top-0 left-0 z-[9999]">
       <Image src={Logo} alt="Lang Learn" className="max-w-[180px]" />
       <div
-        className="w-[100px] h-[100px] flex flex-col justify-center items-center gap-[10px] relative z-20"
+        className="w-[100px] h-[100px] flex flex-col justify-center items-center gap-[10px] relative z-20 cursor-pointer"
         onClick={toggleNav}
       >
         <span
