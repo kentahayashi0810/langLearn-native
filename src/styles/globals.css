@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Headerの高さ分コンテンツを下げる */
+main {
+  margin-top: 70px;
+}
