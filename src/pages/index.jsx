@@ -7,24 +7,24 @@ export default function Home() {
   return (
     <main>
       <div className="container mx-auto max-w-[1000px] pb-10 md:pb-0">
-        <div className="h-[100vh] flex flex-col justify-center px-4">
+        <div className="flex h-[100vh] flex-col justify-center px-4">
           <div className="relative">
             <Image
               src={"/question-bubble-light.svg"}
               alt="?"
               width={111}
               height={76}
-              className="absolute left-0 bottom-0"
+              className="absolute bottom-0 left-0"
             />
             <Image
               src={"/question-bubble-dark.svg"}
               alt="?"
               width={166}
               height={121}
-              className="absolute right-0 bottom-0"
+              className="absolute bottom-0 right-0"
             />
           </div>
-          <h2 className="font-bold text-[min(8vw,3rem)] text-center mb-6">
+          <h2 className="mb-6 text-center text-[min(8vw,3rem)] font-bold">
             ネイティブはなんて言う?
           </h2>
           <SearchBar
@@ -35,7 +35,7 @@ export default function Home() {
           />
         </div>
         <div className="min-h-[100vh]">
-          <div className="relative h-[100vw] mb-10 md:hidden">
+          <div className="relative mb-10 h-[100vw] md:hidden">
             <Image
               className="object-cover"
               src={"/about-image.jpeg"}
@@ -44,10 +44,10 @@ export default function Home() {
             />
           </div>
           <div className="px-4">
-            <h3 className="text-[min(5.6vw,2.25rem)] font-bold mb-10 z-50">
+            <h3 className="z-50 mb-10 text-[min(5.6vw,2.25rem)] font-bold">
               ｢この単語、実際どう使うんだろう？｣
             </h3>
-            <div className="flex mb-10">
+            <div className="mb-10 flex">
               <div className="md:mr-16">
                 <p className="text-[min(4.8vw,1.25rem)]">
                   なんて思ったことはありませんか？
@@ -72,7 +72,7 @@ export default function Home() {
                   <br />
                 </p>
               </div>
-              <div className="relative md:w-[360px] hidden md:block">
+              <div className="relative hidden md:block md:w-[360px]">
                 <Image
                   className="object-cover"
                   src={"/about-image.jpeg"}
@@ -83,9 +83,9 @@ export default function Home() {
             </div>
             {/* TODO: 使い方へ遷移 */}
             <Link href="/">
-              <div className="relative flex items-center z-50">
+              <div className="relative z-50 flex items-center">
                 <MdArrowForward className="mr-4 fill-primary" size={40} />
-                <p className="text-primary text-[min(5.2vw,1.5rem)]">
+                <p className="text-[min(5.2vw,1.5rem)] text-primary">
                   詳しい使い方を見る
                 </p>
               </div>
